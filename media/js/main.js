@@ -128,7 +128,7 @@ $(function () {
             transitionStyle: $(this).data('transition'),
             animateOut: $(this).data('animate-out'),
             animateIn: $(this).data('animate-in'),
-            autoplayTimeout: 15000,
+            autoplayTimeout: 5000,
             responsive: {
                 0: {
                     items: 1,
@@ -146,32 +146,6 @@ $(function () {
         });
     });
 
-    // Owl Carousel With Thumbnails
-    $('.thumbs-carousel').owlCarousel({
-        thumbs: true,
-        thumbsPrerendered: true,
-        loop: $(this).data('loop'),
-        margin: 0,
-        autoplay: $(this).data('autoplay'),
-        nav: $(this).data('nav'),
-        dots: $(this).data('dots'),
-        dotsSpeed: $(this).data('speed'),
-        transitionStyle: $(this).data('transition'),
-        animateOut: $(this).data('animate-out'),
-        animateIn: $(this).data('animate-in'),
-        autoplayTimeout: 20000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
 
     /*==========  Popup Video  ==========*/
     $('.popup-video').magnificPopup({
